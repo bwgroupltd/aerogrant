@@ -1,4 +1,4 @@
-(defproject org.clojars.bigsy/aerogrant "0.1.10-SNAPSHOT"
+(defproject org.clojars.bigsy/aerogrant "0.1.11-SNAPSHOT"
   :description "mashup of aero and integrant with some nice addons"
   :url "https://github.com/Bigsy/aerogrant"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -19,7 +19,7 @@
                   ["deploy" "releases"]
                   ["change" "version" "leiningen.release/bump-version" "patch"]
                   ["vcs" "commit"]
-                  ["vcs" "push" "origin" "master"]]
+                  ["vcs" "push" "origin" "main"]]
 
   :plugins [[s3-wagon-private "1.3.4"]]
 
