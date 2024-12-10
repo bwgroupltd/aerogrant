@@ -11,4 +11,18 @@
                  [com.cognitect.aws/endpoints "1.1.12.718"]
                  [com.cognitect.aws/secretsmanager "868.2.1599.0"]
                  [integrant "0.10.0"]]
+
+  :release-tasks [["vcs" "assert-committed"]
+                  ["change" "version" "leiningen.release/bump-version" "release"]
+                  ["vcs" "commit"]
+                  ["vcs" "tag" "--no-sign"]
+                  ["deploy" "releases"]
+                  ["change" "version" "leiningen.release/bump-version" "patch"]
+                  ["vcs" "commit"]
+                  ["vcs" "push" "origin" "master"]]
+
+  :repositories {"releases" {:url           "s3p://repo.bowerswilkins.net/releases/"
+                             :no-auth       true
+                             :sign-releases false}}
+
   :repl-options {:init-ns aerogrant.core})
