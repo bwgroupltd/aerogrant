@@ -6,10 +6,10 @@
   :dependencies [[org.clojure/clojure "1.11.4"]
                  [aero "1.1.6"]
                  [cheshire "5.13.0"]
-                 [com.cognitect.aws/api "0.8.692"]
+                 [com.cognitect.aws/api "0.8.711"]
                  [com.cognitect.aws/sts "857.2.1574.0"]
-                 [com.cognitect.aws/endpoints "1.1.12.718"]
-                 [com.cognitect.aws/secretsmanager "868.2.1599.0"]
+                 [com.cognitect.aws/endpoints "1.1.12.772"]
+                 [com.cognitect.aws/secretsmanager "869.2.1687.0"]
                  [integrant "0.10.0"]]
 
   :release-tasks [["vcs" "assert-committed"]
