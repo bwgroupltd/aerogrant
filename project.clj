@@ -1,4 +1,4 @@
-(defproject audiogum/aerogrant "0.1.13-SNAPSHOT"
+(defproject audiogum/aerogrant "0.1.13"
   :description "mashup of aero and integrant with some nice addons"
   :url "https://github.com/Bigsy/aerogrant"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
